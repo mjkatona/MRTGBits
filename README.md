@@ -1,2 +1,6 @@
 # MRTGBits
-NAGIOS plug to pull MRTG data as BITS.
+
+This is a NAGIOS plugin to pull the last 5 minutes of MRTG data, convert to bits, and display.  
+
+
+
