@@ -1,4 +1,4 @@
-MRTGBits:: A NAGIOS core plug converting MRTG Bytes to Bits
+MRTGBits:: A NAGIOS core plug converting MRTG Bytes to bits
 v1::1/30/2021
 https://github.com/mjkatona/MRTGBits/releases
 
