@@ -3,7 +3,7 @@ v1::1/30/2021
 https://github.com/mjkatona/MRTGBits/releases
 
 What does this do?
-MRTG can display in Bits but records everything in Bytes
+MRTG can display in bits but records everything in Bytes
 When importing MRTG data in other applications as Bits, it must first be converted
 This NAGIOS core plugin will convert, import, and set threadsholds as Bits
 
