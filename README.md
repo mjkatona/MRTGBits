@@ -24,6 +24,12 @@ Place this file into your ~/nagios/libexec directory and chmod 755<br>
 the /nagios/libexec is where all your other check_this and check_that reside<br>
 <br>
 In your NAGIOS config:<br>
+<br>
+define command{<BR>
+ command_name MRTGBits<BR>
+ command_line $USER1$/MRTGBits.pl $ARG1$<BR>
+ }<BR>
+ #<br> 
 define service{<br>
 use generic-service<br>
 host_name <# Hostname ><br>
@@ -34,6 +40,11 @@ check_command MRTGBits!<# MRTG PWD and Logfile><br>
 <br>
 Here is my working example where my MRTG pushes logfiles to a network "/share" drive and Nagios picks them up<br>
 <br>
+define command{<BR>
+ command_name MRTGBits<BR>
+ command_line $USER1$/MRTGBits.pl $ARG1$<BR>
+ }<BR>
+#<br>
 define service{<br>
 use generic-service<br>
 host_name CORE-1<br>
