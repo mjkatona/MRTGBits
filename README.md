@@ -67,7 +67,7 @@ use generic-service<br>
 host_name CORE-1<br>
 servicegroups NETWORK<br>
 service_description Primary Internet Interface<br>
-check_command MRTGBits!<br>
+check_command MRTGBits!/share/temp/192.168.10.4_23.log!700000000!900000000<br>
 }<br>
 <br>
 And of course restart nagios!<br>
