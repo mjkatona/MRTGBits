@@ -7,6 +7,13 @@ MRTG can display in bits but records everything in Bytes<br>
 When importing MRTG data in other applications as Bits, it must first be converted<br>
 This NAGIOS core plugin will convert, import, and set threadsholds as Bits<br>
 <br>
+Flow<br>
+MRTG writes log file to a dir which NAGIOS Core can read<br>
+NAGIO Core calls MRTGBits.pl via the device.cfg file pointing to the MRTG Log file<br>
+MRTGBits.pl does wonderful perl magic can tells NAGIOS Core<br>
+NAGIOS Core displays wonderful perl magic causing python lovers to cry<br>
+<br>
+
 Why do you care about Bytes or Bits?<br>
 Bytes represent storage AKA Datacenter speak<br>
 Bits represent bandwidth AKA Network speak<br>
